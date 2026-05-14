@@ -1553,6 +1553,16 @@ footer {
   opacity: .85;
 }
 
+/* ── HOME CTA GRID ── */
+.home-cta-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
 /* ── REVEAL ANIMATIONS ── */
 .reveal {
   opacity: 0;
@@ -1668,6 +1678,11 @@ footer {
 
   .detail-img {
     position: static;
+  }
+
+  .home-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
   }
 
   .stats-band {
