@@ -236,46 +236,6 @@ nav.scrolled {
   color: var(--gold);
 }
 
-.mobile-dropdown {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.4rem;
-  width: 100%;
-}
-
-.mobile-dropdown span {
-  font-family: 'Cinzel', serif;
-  font-size: 1.17rem;
-  letter-spacing: .2em;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-  transition: color .3s;
-}
-
-.mobile-dropdown span:hover {
-  color: var(--gold);
-}
-
-.mobile-dropdown-content {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.4rem;
-  width: 100%;
-}
-
-.mobile-dropdown.open .mobile-dropdown-content {
-  display: flex;
-}
-
-.mobile-dropdown-content a {
-  font-size: .85rem;
-  opacity: .8;
-}
-
 /* ── PAGES ── */
 .page {
   display: none;
@@ -1016,6 +976,8 @@ nav.scrolled {
   font-size: .5rem;
   margin-top: .3rem;
   flex-shrink: 0;
+}
+
 .detail-section p {
   font-size: .98rem;
   color: var(--text-muted);
@@ -1614,15 +1576,18 @@ footer {
   gap: 5rem;
   align-items: start;
 }
+
 .about-grid-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
   margin-top: 2.5rem;
 }
+
 .card-grid-2 {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .design-grid-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1630,23 +1595,27 @@ footer {
   align-items: center;
   margin-bottom: 5rem;
 }
+
 .design-grid-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
+
 .work-grid-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+
 .free-grid-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: start;
 }
+
 .free-grid-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
