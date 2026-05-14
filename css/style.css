@@ -1563,6 +1563,12 @@ footer {
   align-items: start;
 }
 
+/* ── ABOUT IMAGES ── */
+.about-images-container {
+  position: sticky;
+  top: 7rem;
+}
+
 /* ── INLINE GRID REPLACEMENTS ── */
 .about-grid-main {
   display: grid;
@@ -1725,6 +1731,14 @@ footer {
 
   .detail-img {
     position: static;
+  }
+
+  .about-images-container {
+    position: static;
+  }
+
+  .about-accent-img {
+    display: none !important;
   }
 
   .home-cta-grid,
