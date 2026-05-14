@@ -1563,6 +1563,53 @@ footer {
   align-items: start;
 }
 
+/* ── INLINE GRID REPLACEMENTS ── */
+.about-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5rem;
+  align-items: start;
+}
+.about-grid-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+.card-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.design-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.design-grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.work-grid-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.free-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+.free-grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 /* ── REVEAL ANIMATIONS ── */
 .reveal {
   opacity: 0;
@@ -1680,8 +1727,22 @@ footer {
     position: static;
   }
 
-  .home-cta-grid {
+  .home-cta-grid,
+  .about-grid-main,
+  .about-grid-features,
+  .card-grid-2,
+  .design-grid-main,
+  .design-grid-images,
+  .work-grid-features,
+  .free-grid-main,
+  .free-grid-contact {
     grid-template-columns: 1fr;
+  }
+
+  .home-cta-grid,
+  .about-grid-main,
+  .design-grid-main,
+  .free-grid-main {
     gap: 3.5rem;
   }
 
