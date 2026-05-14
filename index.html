@@ -81,8 +81,13 @@
     <a onclick="showPage('education')">Education</a>
     <a onclick="showPage('work')">Work With Us</a>
     <a onclick="showPage('free')" style="color:var(--gold)">Free Vastu Advice</a>
-    <a onclick="showPage('books')" style="font-size:.7rem;opacity:.6">Books</a>
-    <a onclick="showPage('resources')" style="font-size:.7rem;opacity:.6">Resources</a>
+    <div class="mobile-dropdown" onclick="this.classList.toggle('open')">
+      <span>Remedies ▾</span>
+      <div class="mobile-dropdown-content">
+        <a onclick="showPage('books')">Books</a>
+        <a onclick="showPage('resources')">Resources</a>
+      </div>
+    </div>
   </div>
 
 

@@ -209,7 +209,7 @@ nav.scrolled {
   background: rgba(10, 7, 5, .98);
   z-index: 190;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1.4rem;
   padding: 5rem 2rem 3rem;
@@ -234,6 +234,46 @@ nav.scrolled {
 
 .mobile-menu a:hover {
   color: var(--gold);
+}
+
+.mobile-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
+}
+
+.mobile-dropdown span {
+  font-family: 'Cinzel', serif;
+  font-size: 1.17rem;
+  letter-spacing: .2em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.mobile-dropdown span:hover {
+  color: var(--gold);
+}
+
+.mobile-dropdown-content {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
+}
+
+.mobile-dropdown.open .mobile-dropdown-content {
+  display: flex;
+}
+
+.mobile-dropdown-content a {
+  font-size: .85rem;
+  opacity: .8;
 }
 
 /* ── PAGES ── */
@@ -976,8 +1016,6 @@ nav.scrolled {
   font-size: .5rem;
   margin-top: .3rem;
   flex-shrink: 0;
-}
-
 .detail-section p {
   font-size: .98rem;
   color: var(--text-muted);
