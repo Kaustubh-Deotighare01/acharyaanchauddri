@@ -699,24 +699,26 @@ nav.scrolled {
 }
 
 .img-card .thumb-courses {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 0 / 1;
   height: auto;
   overflow: hidden;
+  background: var(--dark); /* added to make letterboxing blend in if needed */
+  display: flex; /* center image if aspect ratio doesn't match */
+  align-items: center;
+  justify-content: center;
 }
 
 .img-card .thumb-courses img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  transform: scale(1.1);
-  transform-origin: top center;
+  object-fit: contain;
+  object-position: center;
   transition: transform .6s;
   display: block;
 }
 
 .img-card:hover .thumb-courses img {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 .img-card .body {
